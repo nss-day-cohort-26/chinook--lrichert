@@ -1,5 +1,4 @@
 --Provide a query showing a unique/distinct list of billing countries from 
 --the Invoice table.
-SELECT i.BillingCountry
-FROM Invoice i
-WHERE BillingCountry LIKE 'c%';
+SELECT Distinct i.BillingCountry
+FROM Invoice i;
