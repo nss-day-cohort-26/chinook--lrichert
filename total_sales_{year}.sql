@@ -1,6 +1,6 @@
 --What are the respective total sales for each of those years?
-SELECT  '$' || sum(i.Total) Total,
-STRFTIME('%Y', i.InvoiceDate) AS YEAR
+SELECT '$' || SUM(i.Total) Total, strftime('%Y',i.InvoiceDate) InvoiceYear
 FROM Invoice i
-WHERE InvoiceDate LIKE '%2009%' OR InvoiceDate LIKE '%2011%'
-GROUP BY Year;
+WHERE InvoiceYear = '2011'
+OR InvoiceYear = '2009'
+GROUP BY InvoiceYear;
