@@ -1,6 +1,5 @@
-# chinook--lrichert
-Learning SQL with Chinook
-Downloading the Database Files
+# Learning SQL with Chinook
+Download the Database Files.
 Click the big download button from the Chinook Database site. Know which directory that it's being downloaded to.
 
 Moving the SQLite Database to Your Workspace
